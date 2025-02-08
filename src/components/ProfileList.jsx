@@ -13,7 +13,7 @@ const ProfileList = ({ profiles, handleStartChat, message }) => {
             <img
               src={
                 profile.photo_profile
-                  ? `http://localhost:5000/uploads/${profile.photo_profile}`
+                  ? `https://meetyapp-server-test-production.up.railway.app/uploads/${profile.photo_profile}`
                   : "/default-profile.png"
               }
               alt="profile"
