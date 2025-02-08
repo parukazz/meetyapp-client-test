@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Monoglyceride";
+    src: url("/fonts/monogly/monog.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Monoglyceride";
+    src: url("/fonts/monogly/monog_db.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Monoglyceride";
+    src: url("/fonts/monogly/monog_b.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Monoglyceride";
+    src: url("/fonts/monogly/monog_eb.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .main-container {
+    @apply w-full px-6 pt-10;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .app-container {
+    @apply w-full px-4 pt-5;
+  }
+
+  .template-parent-box {
+    @apply relative mt-10 flex flex-col gap-4;
+  }
+
+  .button-box-next {
+    @apply fixed left-0 right-0 px-6 bottom-0 py-[17px] bg-white;
+  }
+}
+
+@layer components {
+  .input-class {
+    @apply h-12 bg-tertiary px-4 text-xs placeholder:text-xs rounded-lg border-[1px] border-neutral-300 focus:outline-none focus:border-primary;
+  }
+
+  .input-badge {
+    @apply text-xs italic text-neutral-400;
+  }
+
+  .checkbox-gender {
+    @apply flex justify-between items-center w-full h-12 bg-tertiary px-4 text-xs rounded-lg border-[1px];
+  }
+
+  .checkbox-gender-profile {
+    @apply flex justify-between items-center w-max h-12 bg-tertiary px-3 gap-2 text-xs rounded-lg border-[1px];
+  }
+
+  .form-base-profile {
+    @apply flex flex-col gap-6 font-medium text-sm;
+  }
+}
+
+@layer utilities {
+  .black-gradient {
+    @apply bg-gradient-to-b from-transparent to-black;
+  }
+}
